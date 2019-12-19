@@ -21,6 +21,7 @@ data Action
     -- Miscellaneous
     | Backspace | Tab | LeftTab | Enter | Menu
     | Undo | Redo | Cut | Copy | Paste | Save | CloseTab
+    | SwitchLayout
 
     -- Media control
     | AudioPlay | AudioPause | PlayPause | Previous | Next | Stop | ToggleRepeat | ToggleRandom

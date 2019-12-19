@@ -260,19 +260,19 @@ defPklFile,
     defXkbSession, defXkbSystem, defXkbUSystem, defXkbXCompose, defXkbUXCompose,
     defXkbXml, defXkbRemoveXml, defXkbFunctions, defXkbModelsXml, defXkbRemoveModelsXml,
     defKeylayoutUser, defKeylayoutSystem ∷ B.ByteString
-defPklFile = $(embedFile "files/pkl/pkl.exe")
-defXkbSession   = $(embedFile "files/xkb/run-session.sh")
-defXkbSystem    = $(embedFile "files/xkb/install-system.sh")
-defXkbUSystem   = $(embedFile "files/xkb/uninstall-system.sh")
-defXkbXCompose  = $(embedFile "files/xkb/scripts/install-xcompose.sh")
-defXkbUXCompose = $(embedFile "files/xkb/scripts/uninstall-xcompose.sh")
-defXkbXml       = $(embedFile "files/xkb/scripts/add-layout-to-xml.py")
-defXkbRemoveXml = $(embedFile "files/xkb/scripts/remove-layout-from-xml.py")
-defXkbFunctions = $(embedFile "files/xkb/scripts/functions.sh")
-defXkbModelsXml = $(embedFile "files/xkb/scripts/add-models-to-xml.py")
-defXkbRemoveModelsXml = $(embedFile "files/xkb/scripts/remove-models-from-xml.py")
-defKeylayoutUser   = $(embedFile "files/keylayout/install-user.sh")
-defKeylayoutSystem = $(embedFile "files/keylayout/install-system.sh")
+defPklFile = $(embedFile "/home/dzmitry/work/klfc/files/pkl/pkl.exe")
+defXkbSession   = $(embedFile "/home/dzmitry/work/klfc/files/xkb/run-session.sh")
+defXkbSystem    = $(embedFile "/home/dzmitry/work/klfc/files/xkb/install-system.sh")
+defXkbUSystem   = $(embedFile "/home/dzmitry/work/klfc/files/xkb/uninstall-system.sh")
+defXkbXCompose  = $(embedFile "/home/dzmitry/work/klfc/files/xkb/scripts/install-xcompose.sh")
+defXkbUXCompose = $(embedFile "/home/dzmitry/work/klfc/files/xkb/scripts/uninstall-xcompose.sh")
+defXkbXml       = $(embedFile "/home/dzmitry/work/klfc/files/xkb/scripts/add-layout-to-xml.py")
+defXkbRemoveXml = $(embedFile "/home/dzmitry/work/klfc/files/xkb/scripts/remove-layout-from-xml.py")
+defXkbFunctions = $(embedFile "/home/dzmitry/work/klfc/files/xkb/scripts/functions.sh")
+defXkbModelsXml = $(embedFile "/home/dzmitry/work/klfc/files/xkb/scripts/add-models-to-xml.py")
+defXkbRemoveModelsXml = $(embedFile "/home/dzmitry/work/klfc/files/xkb/scripts/remove-models-from-xml.py")
+defKeylayoutUser   = $(embedFile "/home/dzmitry/work/klfc/files/keylayout/install-user.sh")
+defKeylayoutSystem = $(embedFile "/home/dzmitry/work/klfc/files/keylayout/install-system.sh")
 
 execExtraOptions ∷ [ExtraOption] → Layout → Layout
 execExtraOptions = flip (foldr execExtraOption)

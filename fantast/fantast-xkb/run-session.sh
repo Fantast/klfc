@@ -2,7 +2,7 @@
 set -ex
 
 xkb_dir=$(dirname "$0")
-layout=""
+layout="fantastRu"
 mod=""
 variant="basic"
 warning_level=0
