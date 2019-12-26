@@ -2,6 +2,9 @@
 
 set -e
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $SCRIPT_DIR
+
 # klfc fantast-wide-en.json fantast-wide-altgr.json fantast-wide-extend.json --xkb fantast-xkb
 
 klfc fantast-wide-en.json fantast-wide-altgr.json fantast-wide-extend.json --xkb-redirect-all --xkb-redirect-clears-extend --xkb fantast-xkb
