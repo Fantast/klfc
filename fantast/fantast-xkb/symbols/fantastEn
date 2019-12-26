@@ -65,9 +65,8 @@ xkb_symbols "basic" {
     key.type[Group1] = "TWO_LEVEL";
     key <BKSL> { [   apostrophe,     quotedbl ] };
     key <LSGT> { [         less,      greater ] };
-    key.type[Group1] = "ALPHABETIC";
-    key <AB01> { [            z,            Z ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
+    key <AB01> { [            z,            Z,    backslash ] };
     key <AB02> { [            x,            X,     asterisk ] };
     key <AB03> { [            c,            C,    braceleft ] };
     key <AB04> { [            v,            V,   braceright ] };
@@ -86,6 +85,14 @@ xkb_symbols "basic" {
     key <AB10> { [       period,      greater,        Right ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<RGHT>,mods=Control,clearMods=LevelFive) ] };
     key.type[Group1] = "NONE_ALTGR";
+    key <UP> { [           Up,           Up ],
+                 actions[Group1] = [ Redirect(key=<UP>), Redirect(key=<UP>,mods=Mod1,clearMods=LevelThree) ] };
+    key <LEFT> { [         Left,         Left ],
+                 actions[Group1] = [ Redirect(key=<LEFT>), Redirect(key=<LEFT>,mods=Mod1,clearMods=LevelThree) ] };
+    key <DOWN> { [         Down,         Down ],
+                 actions[Group1] = [ Redirect(key=<DOWN>), Redirect(key=<DOWN>,mods=Mod1,clearMods=LevelThree) ] };
+    key <RGHT> { [        Right,        Right ],
+                 actions[Group1] = [ Redirect(key=<RGHT>), Redirect(key=<RGHT>,mods=Mod1,clearMods=LevelThree) ] };
     key <TAB> { [          Tab,          Tab ],
                  actions[Group1] = [ Redirect(key=<TAB>), Redirect(key=<TAB>,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_ALTGR_EXTEND";

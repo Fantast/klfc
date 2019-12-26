@@ -16,6 +16,7 @@
     { "pos": "F", "letters": [ ")" ] },
     { "pos": "G", "letters": [ "=" ] },
 
+    { "pos": "Z", "letters": [ "\\" ] },
     { "pos": "X", "letters": [ "*" ] },
     { "pos": "C", "letters": [ "{" ] },
     { "pos": "V", "letters": [ "}" ] },
@@ -24,6 +25,11 @@
     { "pos": "K", "letters": [ "Alt+Left" ] },
     { "pos": "L", "letters": [ "Alt+Down" ] },
     { "pos": ";", "letters": [ "Alt+Right" ] },
+
+    { "pos": "Up", "letters": [ "Alt+Up" ] },
+    { "pos": "Left", "letters": [ "Alt+Left" ] },
+    { "pos": "Down", "letters": [ "Alt+Down" ] },
+    { "pos": "Right", "letters": [ "Alt+Right" ] },
 
     { "pos": "Tab", "letters": [ "Tab" ] },
     { "pos": "space", "letters": [ " " ] }

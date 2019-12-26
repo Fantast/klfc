@@ -36,7 +36,7 @@ xkb_symbols "basic" {
     key <AD11> { [  Cyrillic_ze,  Cyrillic_ZE,       Delete ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<DELE>,clearMods=LevelFive) ] };
     key.type[Group1] = "TWO_LEVEL";
-    key <AD12> { [       period,        comma ] };
+    key <AD12> { [        slash,     question ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
     key <AC01> { [  Cyrillic_ef,  Cyrillic_EF,          bar ] };
     key <AC02> { [ Cyrillic_yeru, Cyrillic_YERU,         plus ] };
@@ -64,29 +64,33 @@ xkb_symbols "basic" {
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<BKSP>,clearMods=LevelFive) ] };
     key.type[Group1] = "ALPHABETIC";
     key <BKSL> { [   Cyrillic_e,   Cyrillic_E ] };
-    key.type[Group1] = "TWO_LEVEL";
-    key <LSGT> { [        slash,          bar ] };
-    key.type[Group1] = "ALPHABETIC";
-    key <AB01> { [  Cyrillic_ya,  Cyrillic_YA ] };
+    key <LSGT> { [  Cyrillic_yu,  Cyrillic_YU ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
+    key <AB01> { [  Cyrillic_ya,  Cyrillic_YA,    backslash ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE,     asterisk ] };
     key <AB03> { [  Cyrillic_es,  Cyrillic_ES,    braceleft ] };
     key <AB04> { [  Cyrillic_em,  Cyrillic_EM,   braceright ] };
     key.type[Group1] = "ALPHABETIC";
     key <AB05> { [   Cyrillic_i,   Cyrillic_I ] };
-    key.type[Group1] = "TWO_LEVEL";
-    key <AB06> { [    backslash,          bar ] };
-    key.type[Group1] = "ALPHABETIC";
+    key <AB06> { [  Cyrillic_be,  Cyrillic_BE ] };
     key <AB07> { [  Cyrillic_te,  Cyrillic_TE ] };
     key.type[Group1] = "NONE_SHIFT_EXTEND_ALPHABETIC";
     key <AB08> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,         Left ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<LEFT>,mods=Control,clearMods=LevelFive) ] };
-    key.type[Group1] = "ALPHABETIC";
-    key <AB09> { [  Cyrillic_be,  Cyrillic_BE ] };
-    key.type[Group1] = "NONE_SHIFT_EXTEND_ALPHABETIC";
-    key <AB10> { [  Cyrillic_yu,  Cyrillic_YU,        Right ],
+    key.type[Group1] = "TWO_LEVEL";
+    key <AB09> { [        comma,         less ] };
+    key.type[Group1] = "NONE_SHIFT_EXTEND";
+    key <AB10> { [       period,      greater,        Right ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<RGHT>,mods=Control,clearMods=LevelFive) ] };
     key.type[Group1] = "NONE_ALTGR";
+    key <UP> { [           Up,           Up ],
+                 actions[Group1] = [ Redirect(key=<UP>), Redirect(key=<UP>,mods=Mod1,clearMods=LevelThree) ] };
+    key <LEFT> { [         Left,         Left ],
+                 actions[Group1] = [ Redirect(key=<LEFT>), Redirect(key=<LEFT>,mods=Mod1,clearMods=LevelThree) ] };
+    key <DOWN> { [         Down,         Down ],
+                 actions[Group1] = [ Redirect(key=<DOWN>), Redirect(key=<DOWN>,mods=Mod1,clearMods=LevelThree) ] };
+    key <RGHT> { [        Right,        Right ],
+                 actions[Group1] = [ Redirect(key=<RGHT>), Redirect(key=<RGHT>,mods=Mod1,clearMods=LevelThree) ] };
     key <TAB> { [          Tab,          Tab ],
                  actions[Group1] = [ Redirect(key=<TAB>), Redirect(key=<TAB>,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_ALTGR_EXTEND";

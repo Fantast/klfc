@@ -76,6 +76,21 @@ default xkb_types "basic" {
         level_name[Level4] = "Extend";
     };
     
+    type "NONE_SHIFT_EXTEND" {
+        modifiers = LevelFive+Shift;
+        
+        map[None] = Level1;
+        map[Shift] = Level2;
+        map[LevelFive] = Level3;
+        map[LevelFive+Shift] = Level3;
+        
+        preserve[LevelFive+Shift] = Shift;
+        
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Shift";
+        level_name[Level3] = "Extend";
+    };
+    
     type "NONE_ALTGR" {
         modifiers = LevelThree;
         

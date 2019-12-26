@@ -32,7 +32,9 @@
     { "pos": "O", "letters": [ "ш", "Ш" ] },
     { "pos": "P", "letters": [ "щ", "Щ" ] },
     { "pos": "[", "letters": [ "з", "З" ] },
-    { "pos": "]", "letters": [ ".", "," ] },
+//    { "pos": "]", "letters": [ ".", "," ] },
+    { "pos": "]", "letters": [ "/", "?" ] },
+
 
 
     { "pos": "A", "letters": [ "ф", "Ф" ] },
@@ -50,17 +52,22 @@
     { "pos": "\\", "letters": [ "э", "Э" ] },
 
 
-    { "pos": "Iso", "letters": [ "/", "|" ] },
+
+//    { "pos": "Iso", "letters": [ "/", "|" ] },
+    { "pos": "Iso", "letters": [ "ю", "Ю" ] },
     { "pos": "Z", "letters": [ "я", "Я" ] },
     { "pos": "X", "letters": [ "ч", "Ч" ] },
     { "pos": "C", "letters": [ "с", "С" ] },
     { "pos": "V", "letters": [ "м", "М" ] },
     { "pos": "B", "letters": [ "и", "И" ] },
 
-    { "pos": "N", "letters": [ "\\", "|" ] },
+//    { "pos": "N", "letters": [ "\\", "|" ] },
+    { "pos": "N", "letters": [ "б", "Б" ] },
     { "pos": "M", "letters": [ "т", "Т" ] },
     { "pos": ",", "letters": [ "ь", "Ь" ] },
-    { "pos": ".", "letters": [ "б", "Б" ] },
-    { "pos": "/", "letters": [ "ю", "Ю" ] }
+//    { "pos": ".", "letters": [ "б", "Б" ] },
+    { "pos": ".", "letters": [ ",", "<" ] },
+//    { "pos": "/", "letters": [ "ю", "Ю" ] }
+    { "pos": "/", "letters": [ ".", ">" ] }
   ]
 }
