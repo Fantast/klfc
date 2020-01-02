@@ -57,7 +57,7 @@
     { "pos": "V", "letters": [ "v", "V" ] },
     { "pos": "B", "letters": [ "b", "B" ] },
 
-    { "pos": "N", "letters": [ "\\", "|" ] },
+    { "pos": "N", "letters": [ "_", "_" ] },
     { "pos": "M", "letters": [ "n", "N" ] },
     { "pos": ",", "letters": [ "m", "M" ] },
     { "pos": ".", "letters": [ ",", "<" ] },
