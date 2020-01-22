@@ -1,0 +1,34 @@
+{
+  "filter": "no klc,keylayout",
+  "singletonKeys": [
+    [ "Control_L", "Extend" ]
+  ],
+  "shiftlevels": [ "Extend", "Shift+Extend" ],
+  "keys": [
+    { "pos": "I", "letters": [ "Up" ] },
+    { "pos": "J", "letters": [ "Left" ] },
+    { "pos": "K", "letters": [ "Down" ] },
+    { "pos": "L", "letters": [ "Right" ] },
+
+    { "pos": "M", "letters": [ "Control+Left" ] },
+    { "pos": ".", "letters": [ "Control+Right" ] },
+
+    { "pos": "U", "letters": [ "Home" ] },
+    { "pos": "O", "letters": [ "End" ] },
+
+    { "pos": "Y", "letters": [ "PageUp" ] },
+    { "pos": "H", "letters": [ "PageDown" ] },
+
+    { "pos": "P", "letters": [ "Delete" ] },
+    { "pos": ";", "letters": [ "Backspace" ] },
+
+//    { "pos": "A", "letters": [ "Alt" ] },
+    { "pos": "D", "letters": [ "Control" ] },
+    { "pos": "F", "letters": [ "Shift" ] },
+
+//    TODO: next tab, prev tab somewhere on Extend Layer (N, M ?)
+
+    { "pos": "Escape", "letters": [ "CapsLock" ] },
+    { "pos": "Space", "letters": [ "SwitchLayout" ] }
+  ]
+}

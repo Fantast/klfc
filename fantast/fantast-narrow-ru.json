@@ -1,0 +1,68 @@
+{
+  "fullName": "Fantast-Narrow-Ru",
+  "name": "fantastNarrowRu",
+  "shiftlevels": [ "None", "Shift" ],
+  "keys": [
+    { "pos": "~", "letters": [ "ё", "Ё" ] },
+    { "pos": "1", "letters": [ "1", "!" ] },
+    { "pos": "2", "letters": [ "2", "\"" ] },
+    { "pos": "3", "letters": [ "3", "#" ] },
+    { "pos": "4", "letters": [ "4", ";" ] },
+    { "pos": "5", "letters": [ "5", "%" ] },
+    { "pos": "6", "letters": [ "6", ":" ] },
+
+    { "pos": "7", "letters": [ "7", "?" ] },
+    { "pos": "8", "letters": [ "8", "_" ] },
+    { "pos": "9", "letters": [ "9", "_" ] },
+    { "pos": "0", "letters": [ "0", "_" ] },
+    { "pos": "-", "letters": [ "-", "_" ] },
+    { "pos": "+", "letters": [ "_", "_" ] },
+
+
+
+    { "pos": "Q", "letters": [ "й", "Й" ] },
+    { "pos": "W", "letters": [ "ц", "Ц" ] },
+    { "pos": "E", "letters": [ "у", "У" ] },
+    { "pos": "R", "letters": [ "к", "К" ] },
+    { "pos": "T", "letters": [ "е", "Е" ] },
+
+    { "pos": "Y", "letters": [ "н", "Н" ] },
+    { "pos": "U", "letters": [ "г", "Г" ] },
+    { "pos": "I", "letters": [ "ш", "Ш" ] },
+    { "pos": "O", "letters": [ "щ", "Щ" ] },
+    { "pos": "P", "letters": [ "з", "З" ] },
+    { "pos": "[", "letters": [ "/", "?" ] },
+    { "pos": "]", "letters": [ "х", "Х" ] },
+
+
+
+    { "pos": "A", "letters": [ "ф", "Ф" ] },
+    { "pos": "S", "letters": [ "ы", "Ы" ] },
+    { "pos": "D", "letters": [ "в", "В" ] },
+    { "pos": "F", "letters": [ "а", "А" ] },
+    { "pos": "G", "letters": [ "п", "П" ] },
+
+    { "pos": "H", "letters": [ "р", "Р" ] },
+    { "pos": "J", "letters": [ "о", "О" ] },
+    { "pos": "K", "letters": [ "л", "Л" ] },
+    { "pos": "L", "letters": [ "д", "Д" ] },
+    { "pos": ";", "letters": [ "ж", "Ж" ] },
+    { "pos": "'", "letters": [ "э", "Э" ] },
+    { "pos": "\\", "letters": [ "ъ", "Ъ" ] },
+
+
+
+    { "pos": "Iso", "letters": [ "ю", "Ю" ] },
+    { "pos": "Z", "letters": [ "я", "Я" ] },
+    { "pos": "X", "letters": [ "ч", "Ч" ] },
+    { "pos": "C", "letters": [ "с", "С" ] },
+    { "pos": "V", "letters": [ "м", "М" ] },
+    { "pos": "B", "letters": [ "и", "И" ] },
+
+    { "pos": "N", "letters": [ "т", "Т" ] },
+    { "pos": "M", "letters": [ "ь", "Ь" ] },
+    { "pos": ",", "letters": [ ",", "<" ] },
+    { "pos": ".", "letters": [ ".", ">" ] },
+    { "pos": "/", "letters": [ "б", "Б" ] }
+  ]
+}

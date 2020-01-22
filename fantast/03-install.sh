@@ -55,3 +55,5 @@ function installLayout() {
 
 installLayout "fantastEn" "Fantast-En" "basic" "basic" "us"
 installLayout "fantastRu" "Fantast-Ru" "basic" "basic" "ru"
+installLayout "fantastNarrowEn" "Fantast-Narrow-En" "basic" "basic" "us"
+installLayout "fantastNarrowRu" "Fantast-Narrow-Ru" "basic" "basic" "ru"

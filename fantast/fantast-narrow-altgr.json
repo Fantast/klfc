@@ -1,0 +1,37 @@
+{
+  "filter": "no tmk",
+  "singletonKeys": [
+    [ "Alt_R", "AltGr" ]
+  ],
+  "shiftlevels": [ "AltGr" ],
+  "keys": [
+    { "pos": "Q", "letters": [ "^" ] },
+    { "pos": "W", "letters": [ "&" ] },
+    { "pos": "E", "letters": [ "[" ] },
+    { "pos": "R", "letters": [ "]" ] },
+
+    { "pos": "A", "letters": [ "|" ] },
+    { "pos": "S", "letters": [ "+" ] },
+    { "pos": "D", "letters": [ "(" ] },
+    { "pos": "F", "letters": [ ")" ] },
+    { "pos": "G", "letters": [ "=" ] },
+
+    { "pos": "Z", "letters": [ "\\" ] },
+    { "pos": "X", "letters": [ "*" ] },
+    { "pos": "C", "letters": [ "{" ] },
+    { "pos": "V", "letters": [ "}" ] },
+
+    { "pos": "I", "letters": [ "Alt+Up" ] },
+    { "pos": "J", "letters": [ "Alt+Left" ] },
+    { "pos": "K", "letters": [ "Alt+Down" ] },
+    { "pos": "L", "letters": [ "Alt+Right" ] },
+
+    { "pos": "Up", "letters": [ "Alt+Up" ] },
+    { "pos": "Left", "letters": [ "Alt+Left" ] },
+    { "pos": "Down", "letters": [ "Alt+Down" ] },
+    { "pos": "Right", "letters": [ "Alt+Right" ] },
+
+    { "pos": "Tab", "letters": [ "Tab" ] },
+    { "pos": "space", "letters": [ " " ] }
+  ]
+}
