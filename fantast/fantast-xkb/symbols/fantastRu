@@ -94,7 +94,7 @@ xkb_symbols "basic" {
     key <TAB> { [          Tab,          Tab ],
                  actions[Group1] = [ Redirect(key=<TAB>), Redirect(key=<TAB>,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_ALTGR_EXTEND";
-    key <SPCE> { [        space,        space, ISO_Next_Group ] };
+    key <SPCE> { [        space, ISO_Next_Group, ISO_Next_Group ] };
     key.type[Group1] = "NONE_EXTEND";
     key <ESC> { [       Escape,    Caps_Lock ],
                  actions[Group1] = [ Redirect(key=<ESC>), LockMods(mods=Lock) ] };

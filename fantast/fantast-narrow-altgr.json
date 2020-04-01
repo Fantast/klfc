@@ -32,6 +32,6 @@
     { "pos": "Right", "letters": [ "Alt+Right" ] },
 
     { "pos": "Tab", "letters": [ "Tab" ] },
-    { "pos": "space", "letters": [ " " ] }
+    { "pos": "space", "letters": [ "SwitchLayout" ] }
   ]
 }
