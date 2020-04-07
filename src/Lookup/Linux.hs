@@ -256,6 +256,9 @@ data LinuxAction
         { __symbol  ∷ String
         , __addMods ∷ [Modifier]
         }
+    | SwitchLayout
+        { __symbol  ∷ String
+        }
     | MovePtr
         { __symbol ∷ String
         , __x, __y ∷ Int
@@ -297,6 +300,7 @@ printLinuxAction (Symbol _) = pure "NoAction()"
 printLinuxAction (SetMods   _ mods) = printModsWithEffect Shift mods
 printLinuxAction (LatchMods _ mods) = printModsWithEffect Latch mods
 printLinuxAction (LockMods  _ mods) = printModsWithEffect Lock  mods
+printLinuxAction (SwitchLayout  _) = pure ("LockGroup(group=+1)")
 printLinuxAction (MovePtr _ x y) = pure (printf "MovePtr(x=%+d,y=%+d)" x y)
 printLinuxAction (PtrBtn _ b) = pure ("PtrBtn(button=" ⊕ b ⊕ ")")
 printLinuxAction (PtrDoubleClick _ b) = pure ("PtrBtn(button=" ⊕ b ⊕ ",count=2)")
@@ -486,7 +490,6 @@ actionAndLinuxAction =
     , (A.ToggleRandom, Symbol "XF86AudioRandomPlay")
     , (A.AudioRewind, Symbol "XF86AudioRewind")
     , (A.AudioForward, Symbol "XF86AudioForward")
-    , (A.SwitchLayout, Symbol "ISO_Next_Group")
     , (A.Mute, Symbol "XF86AudioMute")
     , (A.VolumeDown, Symbol "XF86AudioLowerVolume")
     , (A.VolumeUp, Symbol "XF86AudioRaiseVolume")
@@ -539,6 +542,8 @@ actionAndLinuxAction =
     , (A.Switch_VT_10, SwitchScreen "XF86_Switch_VT_10" 10)
     , (A.Switch_VT_11, SwitchScreen "XF86_Switch_VT_11" 11)
     , (A.Switch_VT_12, SwitchScreen "XF86_Switch_VT_12" 12)
+
+    , (A.SwitchLayout, SwitchLayout "ISO_Next_Group")
 
     , (A.Button_Default, PtrBtn "Pointer_Button_Dflt" "default")
     , (A.Button_L, PtrBtn "Pointer_Button1" "1")

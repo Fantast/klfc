@@ -29,6 +29,6 @@
 //    TODO: next tab, prev tab somewhere on Extend Layer (N, M ?)
 
     { "pos": "Escape", "letters": [ "CapsLock" ] },
-    { "pos": "Space", "letters": [ "SwitchLayout" ] }
+    { "pos": "Space", "letters": [ "Control" ] }
   ]
 }
