@@ -9,7 +9,7 @@ keycodes="evdev"
 types="complete+fantastEn+fantastRu"
 layout="fantastEn,fantastRu"
 variant="basic,basic"
-option="srvrkeys:none,caps:ctrl_modifier,ctrl:menu_rctrl"
+option="srvrkeys:none"
 
 warning_level=0
 

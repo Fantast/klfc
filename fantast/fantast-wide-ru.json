@@ -68,6 +68,9 @@
 //    { "pos": ".", "letters": [ "б", "Б" ] },
     { "pos": ".", "letters": [ ",", "<" ] },
 //    { "pos": "/", "letters": [ "ю", "Ю" ] }
-    { "pos": "/", "letters": [ ".", ">" ] }
+    { "pos": "/", "letters": [ ".", ">" ] },
+
+    { "pos": "CapsLock", "letters": [ "Control_L" ] },
+    { "pos": "Win_R", "letters": [ "Control_R" ] }
   ]
 }

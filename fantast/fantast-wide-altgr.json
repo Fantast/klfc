@@ -26,12 +26,22 @@
     { "pos": "L", "letters": [ "Alt+Down" ] },
     { "pos": ";", "letters": [ "Alt+Right" ] },
 
-    { "pos": "Up", "letters": [ "Alt+Up" ] },
-    { "pos": "Left", "letters": [ "Alt+Left" ] },
-    { "pos": "Down", "letters": [ "Alt+Down" ] },
-    { "pos": "Right", "letters": [ "Alt+Right" ] },
+    { "pos": "U", "letters": [ "red:Alt+Y" ] },
+    { "pos": "I", "letters": [ "red:Alt+U" ] },
+    { "pos": "P", "letters": [ "red:Alt+O" ] },
+    { "pos": "[", "letters": [ "red:Alt+P" ] },
+    { "pos": "]", "letters": [ "red:Alt+/" ] },
+    { "pos": "J", "letters": [ "red:Alt+H" ] },
+    { "pos": "'", "letters": [ "red:Alt+;" ] },
+    { "pos": "\\", "letters": [ "red:Alt+'" ] },
+    { "pos": "M", "letters": [ "red:Alt+N" ] },
+    { "pos": ",", "letters": [ "red:Alt+M" ] },
+    { "pos": ".", "letters": [ "red:Alt+," ] },
+    { "pos": "/", "letters": [ "red:Alt+." ] },
 
     { "pos": "Tab", "letters": [ "Tab" ] },
-    { "pos": "space", "letters": [ "SwitchLayout" ] }
+    { "pos": "Space", "letters": [ "SwitchLayout" ] },
+    { "pos": "Enter", "letters": [ "red:Alt+Enter" ] },
+    { "pos": "Backspace", "letters": [ "red:Alt+Backspace" ] }
   ]
 }
