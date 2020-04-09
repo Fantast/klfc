@@ -120,14 +120,4 @@ default xkb_types "basic" {
         level_name[Level3] = "Extend";
     };
     
-    type "NONE_EXTEND" {
-        modifiers = LevelFive;
-        
-        map[None] = Level1;
-        map[LevelFive] = Level2;
-        
-        level_name[Level1] = "Base";
-        level_name[Level2] = "Extend";
-    };
-    
 };

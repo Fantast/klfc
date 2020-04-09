@@ -7,8 +7,8 @@ cd $SCRIPT_DIR
 
 # klfc fantast-wide-en.json fantast-wide-altgr.json fantast-wide-extend.json --xkb fantast-xkb
 
-klfc fantast-narrow-en.json fantast-narrow-altgr.json fantast-narrow-extend.json --xkb-redirect-all --xkb-redirect-clears-extend --xkb fantast-xkb
-klfc fantast-narrow-ru.json fantast-narrow-altgr.json fantast-narrow-extend.json --xkb-redirect-all --xkb-redirect-clears-extend --xkb fantast-xkb
+#klfc fantast-narrow-en.json fantast-narrow-altgr.json fantast-narrow-extend.json --xkb-redirect-all --xkb-redirect-clears-extend --xkb fantast-xkb
+#klfc fantast-narrow-ru.json fantast-narrow-altgr.json fantast-narrow-extend.json --xkb-redirect-all --xkb-redirect-clears-extend --xkb fantast-xkb
 klfc fantast-wide-en.json fantast-wide-altgr.json fantast-wide-extend.json --xkb-redirect-all --xkb-redirect-clears-extend --xkb fantast-xkb
 klfc fantast-wide-ru.json fantast-wide-altgr.json fantast-wide-extend.json --xkb-redirect-all --xkb-redirect-clears-extend --xkb fantast-xkb
 

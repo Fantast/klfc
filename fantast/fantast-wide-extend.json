@@ -19,8 +19,10 @@
     { "pos": "[", "letters": [ "Delete" ] },
     { "pos": "'", "letters": [ "Backspace" ] },
 
+    { "pos": ",", "letters": [ "red:Control+Shift+Tab" ] },
+    { "pos": ".", "letters": [ "red:Control+Tab" ] },
+
     { "pos": "Space", "letters": [ "Shift" ] },
-    { "pos": "Escape", "letters": [ "CapsLock" ] },
     { "pos": "Enter", "letters": [ "red:Alt+Enter" ] },
     { "pos": "Backspace", "letters": [ "red:Alt+Backspace" ] }
   ]

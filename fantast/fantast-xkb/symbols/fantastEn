@@ -73,11 +73,13 @@ xkb_symbols "basic" {
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
     key <AB07> { [            n,            N,            n ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB07>,mods=Mod1,clearMods=LevelThree) ] };
-    key <AB08> { [            m,            M,            m ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB08>,mods=Mod1,clearMods=LevelThree) ] };
+    key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
+    key <AB08> { [            m,            M,            m,          Tab ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB08>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control+Shift,clearMods=LevelFive) ] };
+    key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
+    key <AB09> { [        comma,         less,        comma,          Tab ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control,clearMods=LevelFive) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR";
-    key <AB09> { [        comma,         less,        comma ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree) ] };
     key <AB10> { [       period,      greater,       period ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB10>,mods=Mod1,clearMods=LevelThree) ] };
     key.type[Group1] = "ONE_LEVEL";
@@ -95,9 +97,6 @@ xkb_symbols "basic" {
                  actions[Group1] = [ Redirect(key=<RTRN>), Redirect(key=<RTRN>,mods=Mod1,clearMods=LevelThree), Redirect(key=<RTRN>,mods=Mod1,clearMods=LevelFive) ] };
     key <BKSP> { [    BackSpace,    BackSpace,    BackSpace ],
                  actions[Group1] = [ Redirect(key=<BKSP>), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelThree), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelFive) ] };
-    key.type[Group1] = "NONE_EXTEND";
-    key <ESC> { [       Escape,    Caps_Lock ],
-                 actions[Group1] = [ Redirect(key=<ESC>), LockMods(mods=Lock) ] };
     key.type[Group1] = "ONE_LEVEL";
     key <LALT> { [ ISO_Level5_Shift ],
                  actions[Group1] = [ SetMods(mods=LevelFive) ],
