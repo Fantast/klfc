@@ -71,6 +71,7 @@
     { "pos": "/", "letters": [ ".", ">" ] },
 
     { "pos": "CapsLock", "letters": [ "Control_L" ] },
-    { "pos": "Win_R", "letters": [ "Control_R" ] }
+    { "pos": "Menu", "letters": [ "Control_R" ] },
+    { "pos": "Win_R", "letters": [ "Alt_R" ] }
   ]
 }

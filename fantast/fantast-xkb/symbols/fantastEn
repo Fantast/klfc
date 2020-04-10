@@ -73,20 +73,21 @@ xkb_symbols "basic" {
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
     key <AB07> { [            n,            N,            n ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB07>,mods=Mod1,clearMods=LevelThree) ] };
-    key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
-    key <AB08> { [            m,            M,            m,          Tab ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB08>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control+Shift,clearMods=LevelFive) ] };
+    key <AB08> { [            m,            M,            m ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB08>,mods=Mod1,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
     key <AB09> { [        comma,         less,        comma,          Tab ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control,clearMods=LevelFive) ] };
-    key.type[Group1] = "NONE_SHIFT_ALTGR";
-    key <AB10> { [       period,      greater,       period ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB10>,mods=Mod1,clearMods=LevelThree) ] };
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control+Shift,clearMods=LevelFive) ] };
+    key <AB10> { [       period,      greater,       period,          Tab ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB10>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control,clearMods=LevelFive) ] };
     key.type[Group1] = "ONE_LEVEL";
     key <CAPS> { [    Control_L ],
                  actions[Group1] = [ SetMods(mods=Control) ] };
-    key <RWIN> { [    Control_R ],
+    key <MENU> { [    Control_R ],
                  actions[Group1] = [ SetMods(mods=Control) ] };
+    key <RWIN> { [        Alt_R ],
+                 actions[Group1] = [ SetMods(mods=Alt) ],
+                 vmods=Alt };
     key.type[Group1] = "NONE_ALTGR";
     key <TAB> { [          Tab,          Tab ],
                  actions[Group1] = [ Redirect(key=<TAB>), Redirect(key=<TAB>,clearMods=LevelThree) ] };
