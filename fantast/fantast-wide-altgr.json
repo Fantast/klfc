@@ -9,6 +9,7 @@
     { "pos": "W", "letters": [ "&" ] },
     { "pos": "E", "letters": [ "[" ] },
     { "pos": "R", "letters": [ "]" ] },
+    { "pos": "T", "letters": [ "<" ] },
 
     { "pos": "A", "letters": [ "|" ] },
     { "pos": "S", "letters": [ "+" ] },
@@ -20,6 +21,7 @@
     { "pos": "X", "letters": [ "*" ] },
     { "pos": "C", "letters": [ "{" ] },
     { "pos": "V", "letters": [ "}" ] },
+    { "pos": "B", "letters": [ ">" ] },
 
     { "pos": "O", "letters": [ "Alt+Up" ] },
     { "pos": "K", "letters": [ "Alt+Left" ] },

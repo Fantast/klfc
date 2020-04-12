@@ -60,8 +60,8 @@
     { "pos": "N", "letters": [ "_", "_" ] },
     { "pos": "M", "letters": [ "n", "N" ] },
     { "pos": ",", "letters": [ "m", "M" ] },
-    { "pos": ".", "letters": [ ",", "<" ] },
-    { "pos": "/", "letters": [ ".", ">" ] },
+    { "pos": ".", "letters": [ ",", "_" ] },
+    { "pos": "/", "letters": [ ".", "_" ] },
 
     { "pos": "CapsLock", "letters": [ "Control_L" ] },
     { "pos": "Menu", "letters": [ "Control_R" ] },

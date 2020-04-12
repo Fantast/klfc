@@ -66,9 +66,9 @@
     { "pos": "M", "letters": [ "т", "Т" ] },
     { "pos": ",", "letters": [ "ь", "Ь" ] },
 //    { "pos": ".", "letters": [ "б", "Б" ] },
-    { "pos": ".", "letters": [ ",", "<" ] },
+    { "pos": ".", "letters": [ ",", "_" ] },
 //    { "pos": "/", "letters": [ "ю", "Ю" ] }
-    { "pos": "/", "letters": [ ".", ">" ] },
+    { "pos": "/", "letters": [ ".", "_" ] },
 
     { "pos": "CapsLock", "letters": [ "Control_L" ] },
     { "pos": "Menu", "letters": [ "Control_R" ] },

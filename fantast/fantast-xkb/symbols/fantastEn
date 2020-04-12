@@ -20,7 +20,7 @@ xkb_symbols "basic" {
     key <AD02> { [            w,            W,    ampersand ] };
     key <AD03> { [            e,            E,  bracketleft ] };
     key <AD04> { [            r,            R, bracketright ] };
-    key <AD05> { [            t,            T ] };
+    key <AD05> { [            t,            T,         less ] };
     key <AD06> { [   underscore,   underscore ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
     key <AD07> { [            y,            Y,            y,        Prior ],
@@ -66,8 +66,7 @@ xkb_symbols "basic" {
     key <AB02> { [            x,            X,     asterisk ] };
     key <AB03> { [            c,            C,    braceleft ] };
     key <AB04> { [            v,            V,   braceright ] };
-    key.type[Group1] = "ALPHABETIC";
-    key <AB05> { [            b,            B ] };
+    key <AB05> { [            b,            B,      greater ] };
     key.type[Group1] = "TWO_LEVEL";
     key <AB06> { [   underscore,   underscore ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
@@ -76,9 +75,9 @@ xkb_symbols "basic" {
     key <AB08> { [            m,            M,            m ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB08>,mods=Mod1,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
-    key <AB09> { [        comma,         less,        comma,          Tab ],
+    key <AB09> { [        comma,   underscore,        comma,          Tab ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control+Shift,clearMods=LevelFive) ] };
-    key <AB10> { [       period,      greater,       period,          Tab ],
+    key <AB10> { [       period,   underscore,       period,          Tab ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB10>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control,clearMods=LevelFive) ] };
     key.type[Group1] = "ONE_LEVEL";
     key <CAPS> { [    Control_L ],

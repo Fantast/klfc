@@ -20,7 +20,7 @@ xkb_symbols "basic" {
     key <AD02> { [ Cyrillic_tse, Cyrillic_TSE,    ampersand ] };
     key <AD03> { [   Cyrillic_u,   Cyrillic_U,  bracketleft ] };
     key <AD04> { [  Cyrillic_ka,  Cyrillic_KA, bracketright ] };
-    key <AD05> { [  Cyrillic_ie,  Cyrillic_IE ] };
+    key <AD05> { [  Cyrillic_ie,  Cyrillic_IE,         less ] };
     key <AD06> { [  Cyrillic_ha,  Cyrillic_HA ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
     key <AD07> { [  Cyrillic_en,  Cyrillic_EN,            y,        Prior ],
@@ -64,16 +64,16 @@ xkb_symbols "basic" {
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE,     asterisk ] };
     key <AB03> { [  Cyrillic_es,  Cyrillic_ES,    braceleft ] };
     key <AB04> { [  Cyrillic_em,  Cyrillic_EM,   braceright ] };
+    key <AB05> { [   Cyrillic_i,   Cyrillic_I,      greater ] };
     key.type[Group1] = "ALPHABETIC";
-    key <AB05> { [   Cyrillic_i,   Cyrillic_I ] };
     key <AB06> { [  Cyrillic_be,  Cyrillic_BE ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
     key <AB07> { [  Cyrillic_te,  Cyrillic_TE,            n ] };
     key <AB08> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,            m ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
-    key <AB09> { [        comma,         less,        comma,          Tab ],
+    key <AB09> { [        comma,   underscore,        comma,          Tab ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control+Shift,clearMods=LevelFive) ] };
-    key <AB10> { [       period,      greater,       period,          Tab ],
+    key <AB10> { [       period,   underscore,       period,          Tab ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB10>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control,clearMods=LevelFive) ] };
     key.type[Group1] = "ONE_LEVEL";
     key <CAPS> { [    Control_L ],
