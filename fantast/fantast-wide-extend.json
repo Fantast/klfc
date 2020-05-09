@@ -1,7 +1,7 @@
 {
   "filter": "no klc,keylayout",
   "singletonKeys": [
-    [ "Alt_L", "Extend" ]
+    [ "Control_L", "Extend" ]
   ],
   "shiftlevels": [ "Extend", "Shift+Extend" ],
   "keys": [

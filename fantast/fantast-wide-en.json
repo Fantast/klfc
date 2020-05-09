@@ -11,7 +11,7 @@
     { "pos": "5", "letters": [ "5", "%" ] },
     { "pos": "6", "letters": [ "6", "_" ] },
 
-    { "pos": "7", "letters": [ "_", "_" ] },
+    { "pos": "7", "letters": [ "=", "+" ] },
     { "pos": "8", "letters": [ "7", "_" ] },
     { "pos": "9", "letters": [ "8", "_" ] },
     { "pos": "0", "letters": [ "9", "_" ] },
@@ -26,7 +26,7 @@
     { "pos": "R", "letters": [ "r", "R" ] },
     { "pos": "T", "letters": [ "t", "T" ] },
 
-    { "pos": "Y", "letters": [ "_", "_" ] },
+    { "pos": "Y", "letters": [ "[", "{" ] },
     { "pos": "U", "letters": [ "y", "Y" ] },
     { "pos": "I", "letters": [ "u", "U" ] },
     { "pos": "O", "letters": [ "i", "I" ] },
@@ -41,7 +41,7 @@
     { "pos": "F", "letters": [ "f", "F" ] },
     { "pos": "G", "letters": [ "g", "G" ] },
 
-    { "pos": "H", "letters": [ "_", "_" ] },
+    { "pos": "H", "letters": [ "]", "}" ] },
     { "pos": "J", "letters": [ "h", "H" ] },
     { "pos": "K", "letters": [ "j", "J" ] },
     { "pos": "L", "letters": [ "k", "K" ] },
@@ -57,11 +57,11 @@
     { "pos": "V", "letters": [ "v", "V" ] },
     { "pos": "B", "letters": [ "b", "B" ] },
 
-    { "pos": "N", "letters": [ "_", "_" ] },
+    { "pos": "N", "letters": [ "\\", "|" ] },
     { "pos": "M", "letters": [ "n", "N" ] },
     { "pos": ",", "letters": [ "m", "M" ] },
-    { "pos": ".", "letters": [ ",", "_" ] },
-    { "pos": "/", "letters": [ ".", "_" ] },
+    { "pos": ".", "letters": [ ",", "<" ] },
+    { "pos": "/", "letters": [ ".", ">" ] },
 
     { "pos": "CapsLock", "letters": [ "Control_L" ] },
     { "pos": "Menu", "letters": [ "Control_R" ] },

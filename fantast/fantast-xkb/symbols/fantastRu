@@ -94,7 +94,7 @@ xkb_symbols "basic" {
     key <BKSP> { [    BackSpace,    BackSpace,    BackSpace ],
                  actions[Group1] = [ Redirect(key=<BKSP>), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelThree), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelFive) ] };
     key.type[Group1] = "ONE_LEVEL";
-    key <LALT> { [ ISO_Level5_Shift ],
+    key <LCTL> { [ ISO_Level5_Shift ],
                  actions[Group1] = [ SetMods(mods=LevelFive) ],
                  vmods=LevelFive };
     modifier_map Mod3 { ISO_Level5_Shift };
