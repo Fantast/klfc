@@ -1,7 +1,7 @@
 {
   "filter": "no klc,keylayout",
   "singletonKeys": [
-    [ "Control_L", "Extend" ]
+    [ "CapsLock", "Extend" ]
   ],
   "shiftlevels": [ "Extend", "Shift+Extend" ],
   "keys": [
@@ -10,20 +10,18 @@
     { "pos": "L", "letters": [ "Down" ] },
     { "pos": ";", "letters": [ "Right" ] },
 
-    { "pos": "I", "letters": [ "Home" ] },
-    { "pos": "P", "letters": [ "End" ] },
-
+    { "pos": "I", "letters": [ "Control+Left" ] },
+    { "pos": "P", "letters": [ "Control+Right" ] },
+    { "pos": "J", "letters": [ "Home" ] },
+    { "pos": "'", "letters": [ "End" ] },
     { "pos": "U", "letters": [ "PageUp" ] },
-    { "pos": "J", "letters": [ "PageDown" ] },
+    { "pos": "[", "letters": [ "PageDown" ] },
+    { "pos": "]", "letters": [ "Insert" ] },
 
-    { "pos": "[", "letters": [ "Delete" ] },
-    { "pos": "'", "letters": [ "Backspace" ] },
+    { "pos": "Backspace", "letters": [ "Delete" ] },
 
-    { "pos": ".", "letters": [ "red:Control+Shift+Tab" ] },
-    { "pos": "/", "letters": [ "red:Control+Tab" ] },
+    { "pos": "M", "letters": [ "Control+Tab" ] },
 
-    { "pos": "Space", "letters": [ "Shift" ] },
-    { "pos": "Enter", "letters": [ "red:Alt+Enter" ] },
-    { "pos": "Backspace", "letters": [ "red:Alt+Backspace" ] }
+    { "pos": "Space", "letters": [ "Shift" ] }
   ]
 }

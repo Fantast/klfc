@@ -70,8 +70,27 @@
 //    { "pos": "/", "letters": [ "ю", "Ю" ] }
     { "pos": "/", "letters": [ ".", "_" ] },
 
-    { "pos": "CapsLock", "letters": [ "Control_L" ] },
-    { "pos": "Menu", "letters": [ "Control_R" ] },
-    { "pos": "Win_R", "letters": [ "Alt_R" ] }
+
+    { "pos": "Control_L", "letters": [ "Alt_L" ] },
+    { "pos": "Alt_L", "letters": [ "Control_L" ] },
+    { "pos": "Alt_R", "letters": [ "Control_R" ] },
+    { "pos": "Menu", "letters": [ "Alt_R" ] },
+    { "pos": "Control_R", "letters": [ "Alt_R" ] },
+
+    { "pos": "Insert", "letters": [ "_" ] },
+    { "pos": "Delete", "letters": [ "_" ] },
+    { "pos": "Home", "letters": [ "_" ] },
+    { "pos": "End", "letters": [ "_" ] },
+    { "pos": "PageUp", "letters": [ "_" ] },
+    { "pos": "PageDown", "letters": [ "_" ] }
+    //    { "pos": "Left", "letters": [ "_" ] },
+    //    { "pos": "Right", "letters": [ "_" ] },
+    //    { "pos": "Up", "letters": [ "_" ] },
+    //    { "pos": "Down", "letters": [ "_" ] }
+
+
+    //    { "pos": "CapsLock", "letters": [ "Control_L" ] },
+    //    { "pos": "Menu", "letters": [ "Control_R" ] },
+    //    { "pos": "Win_R", "letters": [ "Alt_R" ] }
   ]
 }

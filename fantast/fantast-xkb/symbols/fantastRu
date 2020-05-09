@@ -23,18 +23,16 @@ xkb_symbols "basic" {
     key <AD05> { [  Cyrillic_ie,  Cyrillic_IE,         less ] };
     key <AD06> { [  Cyrillic_ha,  Cyrillic_HA ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
-    key <AD07> { [  Cyrillic_en,  Cyrillic_EN,            y,        Prior ],
-                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<PGUP>,clearMods=LevelFive) ] };
-    key <AD08> { [ Cyrillic_ghe, Cyrillic_GHE,            u,         Home ],
-                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<HOME>,clearMods=LevelFive) ] };
+    key <AD07> { [  Cyrillic_en,  Cyrillic_EN,            y,        Prior ] };
+    key <AD08> { [ Cyrillic_ghe, Cyrillic_GHE,            u,         Left ],
+                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<LEFT>,mods=Control,clearMods=LevelFive) ] };
     key <AD09> { [ Cyrillic_sha, Cyrillic_SHA,           Up,           Up ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<UP>,mods=Mod1,clearMods=LevelThree), Redirect(key=<UP>,clearMods=LevelFive) ] };
-    key <AD10> { [ Cyrillic_shcha, Cyrillic_SHCHA,            o,          End ],
-                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<END>,clearMods=LevelFive) ] };
-    key <AD11> { [  Cyrillic_ze,  Cyrillic_ZE,            p,       Delete ],
-                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<DELE>,clearMods=LevelFive) ] };
-    key.type[Group1] = "NONE_SHIFT_ALTGR";
-    key <AD12> { [        slash,     question,        slash ],
+    key <AD10> { [ Cyrillic_shcha, Cyrillic_SHCHA,            o,        Right ],
+                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<RGHT>,mods=Control,clearMods=LevelFive) ] };
+    key <AD11> { [  Cyrillic_ze,  Cyrillic_ZE,            p,         Next ] };
+    key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
+    key <AD12> { [        slash,     question,        slash,       Insert ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD12>,mods=Mod1,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
     key <AC01> { [  Cyrillic_ef,  Cyrillic_EF,          bar ] };
@@ -45,16 +43,14 @@ xkb_symbols "basic" {
     key.type[Group1] = "ALPHABETIC";
     key <AC06> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
-    key <AC07> { [  Cyrillic_er,  Cyrillic_ER,            h,         Next ],
-                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<PGDN>,clearMods=LevelFive) ] };
+    key <AC07> { [  Cyrillic_er,  Cyrillic_ER,            h,         Home ] };
     key <AC08> { [   Cyrillic_o,   Cyrillic_O,         Left,         Left ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<LEFT>,mods=Mod1,clearMods=LevelThree), Redirect(key=<LEFT>,clearMods=LevelFive) ] };
     key <AC09> { [  Cyrillic_el,  Cyrillic_EL,         Down,         Down ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<DOWN>,mods=Mod1,clearMods=LevelThree), Redirect(key=<DOWN>,clearMods=LevelFive) ] };
     key <AC10> { [  Cyrillic_de,  Cyrillic_DE,        Right,        Right ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<RGHT>,mods=Mod1,clearMods=LevelThree), Redirect(key=<RGHT>,clearMods=LevelFive) ] };
-    key <AC11> { [ Cyrillic_zhe, Cyrillic_ZHE,    semicolon,    BackSpace ],
-                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<BKSP>,clearMods=LevelFive) ] };
+    key <AC11> { [ Cyrillic_zhe, Cyrillic_ZHE,    semicolon,          End ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
     key <BKSL> { [   Cyrillic_e,   Cyrillic_E,   apostrophe ] };
     key.type[Group1] = "ALPHABETIC";
@@ -67,36 +63,52 @@ xkb_symbols "basic" {
     key <AB05> { [   Cyrillic_i,   Cyrillic_I,      greater ] };
     key.type[Group1] = "ALPHABETIC";
     key <AB06> { [  Cyrillic_be,  Cyrillic_BE ] };
+    key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
+    key <AB07> { [  Cyrillic_te,  Cyrillic_TE,            n,          Tab ],
+                 actions[Group1] = [ NoAction(), NoAction(), NoAction(), Redirect(key=<TAB>,mods=Control,clearMods=LevelFive) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_ALPHABETIC";
-    key <AB07> { [  Cyrillic_te,  Cyrillic_TE,            n ] };
     key <AB08> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,            m ] };
-    key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
-    key <AB09> { [        comma,   underscore,        comma,          Tab ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control+Shift,clearMods=LevelFive) ] };
-    key <AB10> { [       period,   underscore,       period,          Tab ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB10>,mods=Mod1,clearMods=LevelThree), Redirect(key=<TAB>,mods=Control,clearMods=LevelFive) ] };
+    key.type[Group1] = "NONE_SHIFT_ALTGR";
+    key <AB09> { [        comma,   underscore,        comma ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB09>,mods=Mod1,clearMods=LevelThree) ] };
+    key <AB10> { [       period,   underscore,       period ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AB10>,mods=Mod1,clearMods=LevelThree) ] };
     key.type[Group1] = "ONE_LEVEL";
-    key <CAPS> { [    Control_L ],
-                 actions[Group1] = [ SetMods(mods=Control) ] };
-    key <MENU> { [    Control_R ],
-                 actions[Group1] = [ SetMods(mods=Control) ] };
-    key <RWIN> { [        Alt_R ],
+    key <LCTL> { [        Alt_L ],
                  actions[Group1] = [ SetMods(mods=Alt) ],
                  vmods=Alt };
+    key <LALT> { [    Control_L ],
+                 actions[Group1] = [ SetMods(mods=Control) ] };
+    key <RALT> { [    Control_R ],
+                 actions[Group1] = [ SetMods(mods=Control) ] };
+    key <MENU> { [        Alt_R ],
+                 actions[Group1] = [ SetMods(mods=Alt) ],
+                 vmods=Alt };
+    key <RCTL> { [        Alt_R ],
+                 actions[Group1] = [ SetMods(mods=Alt) ],
+                 vmods=Alt };
+    key <INS> { [   underscore ] };
+    key <DELE> { [   underscore ] };
+    key <HOME> { [   underscore ] };
+    key <END> { [   underscore ] };
+    key <PGUP> { [   underscore ] };
+    key <PGDN> { [   underscore ] };
     key.type[Group1] = "NONE_ALTGR";
     key <TAB> { [          Tab,          Tab ],
                  actions[Group1] = [ Redirect(key=<TAB>), Redirect(key=<TAB>,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_ALTGR_EXTEND";
     key <SPCE> { [        space, ISO_Next_Group,      Shift_L ],
                  actions[Group1] = [ NoAction(), LockGroup(group=+1), SetMods(mods=Shift) ] };
-    key <RTRN> { [       Return,       Return,       Return ],
-                 actions[Group1] = [ Redirect(key=<RTRN>), Redirect(key=<RTRN>,mods=Mod1,clearMods=LevelThree), Redirect(key=<RTRN>,mods=Mod1,clearMods=LevelFive) ] };
-    key <BKSP> { [    BackSpace,    BackSpace,    BackSpace ],
-                 actions[Group1] = [ Redirect(key=<BKSP>), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelThree), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelFive) ] };
+    key.type[Group1] = "NONE_ALTGR";
+    key <RTRN> { [       Return,       Return ],
+                 actions[Group1] = [ Redirect(key=<RTRN>), Redirect(key=<RTRN>,mods=Mod1,clearMods=LevelThree) ] };
+    key.type[Group1] = "NONE_ALTGR_EXTEND";
+    key <BKSP> { [    BackSpace,    BackSpace,       Delete ],
+                 actions[Group1] = [ Redirect(key=<BKSP>), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelThree) ] };
     key.type[Group1] = "ONE_LEVEL";
-    key <LCTL> { [ ISO_Level5_Shift ],
+    key <CAPS> { [ ISO_Level5_Shift ],
                  actions[Group1] = [ SetMods(mods=LevelFive) ],
                  vmods=LevelFive };
     modifier_map Mod3 { ISO_Level5_Shift };
-    include "level3(ralt_switch)"
+    include "level3(rwin_switch)"
 };

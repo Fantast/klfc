@@ -1,7 +1,7 @@
 {
   "filter": "no tmk",
   "singletonKeys": [
-    [ "Alt_R", "AltGr" ]
+    [ "Win_R", "AltGr" ]
   ],
   "shiftlevels": [ "AltGr" ],
   "keys": [
