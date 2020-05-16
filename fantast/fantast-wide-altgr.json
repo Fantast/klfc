@@ -23,10 +23,10 @@
     { "pos": "V", "letters": [ "}" ] },
     { "pos": "B", "letters": [ ">" ] },
 
-    { "pos": "O", "letters": [ "Alt+Up" ] },
-    { "pos": "K", "letters": [ "Alt+Left" ] },
-    { "pos": "L", "letters": [ "Alt+Down" ] },
-    { "pos": ";", "letters": [ "Alt+Right" ] },
+//    { "pos": "O", "letters": [ "Alt+Up" ] },
+//    { "pos": "K", "letters": [ "Alt+Left" ] },
+//    { "pos": "L", "letters": [ "Alt+Down" ] },
+//    { "pos": ";", "letters": [ "Alt+Right" ] },
 
     { "pos": "U", "letters": [ "red:Alt+Y" ] },
     { "pos": "I", "letters": [ "red:Alt+U" ] },
@@ -42,7 +42,7 @@
     { "pos": "/", "letters": [ "red:Alt+." ] },
 
     { "pos": "Tab", "letters": [ "Tab" ] },
-    { "pos": "Space", "letters": [ "SwitchLayout" ] },
+//    { "pos": "Space", "letters": [ "SwitchLayout" ] },
     { "pos": "Enter", "letters": [ "red:Alt+Enter" ] },
     { "pos": "Backspace", "letters": [ "red:Alt+Backspace" ] }
   ]

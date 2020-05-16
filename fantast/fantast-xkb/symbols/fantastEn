@@ -23,16 +23,18 @@ xkb_symbols "basic" {
     key <AD05> { [            t,            T,         less ] };
     key <AD06> { [  bracketleft,    braceleft ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
-    key <AD07> { [            y,            Y,            y,        Prior ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD07>,mods=Mod1,clearMods=LevelThree) ] };
-    key <AD08> { [            u,            U,            u,         Left ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD08>,mods=Mod1,clearMods=LevelThree), Redirect(key=<LEFT>,mods=Control,clearMods=LevelFive) ] };
-    key <AD09> { [            i,            I,           Up,           Up ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<UP>,mods=Mod1,clearMods=LevelThree), Redirect(key=<UP>,clearMods=LevelFive) ] };
+    key <AD07> { [            y,            Y,            y,         Left ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD07>,mods=Mod1,clearMods=LevelThree), Redirect(key=<LEFT>,mods=Control,clearMods=LevelFive) ] };
+    key <AD08> { [            u,            U,            u,         Home ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD08>,mods=Mod1,clearMods=LevelThree), Redirect(key=<HOME>,clearMods=LevelFive) ] };
+    key.type[Group1] = "NONE_SHIFT_EXTEND_ALPHABETIC";
+    key <AD09> { [            i,            I,          End ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<END>,clearMods=LevelFive) ] };
+    key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
     key <AD10> { [            o,            O,            o,        Right ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD10>,mods=Mod1,clearMods=LevelThree), Redirect(key=<RGHT>,mods=Control,clearMods=LevelFive) ] };
-    key <AD11> { [            p,            P,            p,         Next ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD11>,mods=Mod1,clearMods=LevelThree) ] };
+    key <AD11> { [            p,            P,            p,        Prior ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD11>,mods=Mod1,clearMods=LevelThree), Redirect(key=<PGUP>,clearMods=LevelFive) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
     key <AD12> { [        slash,     question,        slash,       Insert ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AD12>,mods=Mod1,clearMods=LevelThree) ] };
@@ -45,17 +47,18 @@ xkb_symbols "basic" {
     key.type[Group1] = "TWO_LEVEL";
     key <AC06> { [ bracketright,   braceright ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND_ALPHABETIC";
-    key <AC07> { [            h,            H,            h,         Home ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AC07>,mods=Mod1,clearMods=LevelThree) ] };
-    key <AC08> { [            j,            J,         Left,         Left ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<LEFT>,mods=Mod1,clearMods=LevelThree), Redirect(key=<LEFT>,clearMods=LevelFive) ] };
-    key <AC09> { [            k,            K,         Down,         Down ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<DOWN>,mods=Mod1,clearMods=LevelThree), Redirect(key=<DOWN>,clearMods=LevelFive) ] };
-    key <AC10> { [            l,            L,        Right,        Right ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<RGHT>,mods=Mod1,clearMods=LevelThree), Redirect(key=<RGHT>,clearMods=LevelFive) ] };
+    key <AC07> { [            h,            H,            h,         Left ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AC07>,mods=Mod1,clearMods=LevelThree), Redirect(key=<LEFT>,clearMods=LevelFive) ] };
+    key.type[Group1] = "NONE_SHIFT_EXTEND_ALPHABETIC";
+    key <AC08> { [            j,            J,         Down ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<DOWN>,clearMods=LevelFive) ] };
+    key <AC09> { [            k,            K,           Up ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<UP>,clearMods=LevelFive) ] };
+    key <AC10> { [            l,            L,        Right ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<RGHT>,clearMods=LevelFive) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR_EXTEND";
-    key <AC11> { [    semicolon,        colon,    semicolon,          End ],
-                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AC11>,mods=Mod1,clearMods=LevelThree) ] };
+    key <AC11> { [    semicolon,        colon,    semicolon,         Next ],
+                 actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<AC11>,mods=Mod1,clearMods=LevelThree), Redirect(key=<PGDN>,clearMods=LevelFive) ] };
     key.type[Group1] = "NONE_SHIFT_ALTGR";
     key <BKSL> { [   apostrophe,     quotedbl,   apostrophe ],
                  actions[Group1] = [ NoAction(), NoAction(), Redirect(key=<BKSL>,mods=Mod1,clearMods=LevelThree) ] };
@@ -95,23 +98,17 @@ xkb_symbols "basic" {
                  actions[Group1] = [ SetMods(mods=Alt) ],
                  vmods=Alt };
     key <INS> { [   underscore ] };
-    key <DELE> { [   underscore ] };
-    key <HOME> { [   underscore ] };
-    key <END> { [   underscore ] };
-    key <PGUP> { [   underscore ] };
-    key <PGDN> { [   underscore ] };
     key.type[Group1] = "NONE_ALTGR";
     key <TAB> { [          Tab,          Tab ],
                  actions[Group1] = [ Redirect(key=<TAB>), Redirect(key=<TAB>,clearMods=LevelThree) ] };
-    key.type[Group1] = "NONE_ALTGR_EXTEND";
-    key <SPCE> { [        space, ISO_Next_Group,      Shift_L ],
-                 actions[Group1] = [ NoAction(), LockGroup(group=+1), SetMods(mods=Shift) ] };
-    key.type[Group1] = "NONE_ALTGR";
     key <RTRN> { [       Return,       Return ],
                  actions[Group1] = [ Redirect(key=<RTRN>), Redirect(key=<RTRN>,mods=Mod1,clearMods=LevelThree) ] };
     key.type[Group1] = "NONE_ALTGR_EXTEND";
     key <BKSP> { [    BackSpace,    BackSpace,       Delete ],
-                 actions[Group1] = [ Redirect(key=<BKSP>), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelThree) ] };
+                 actions[Group1] = [ Redirect(key=<BKSP>), Redirect(key=<BKSP>,mods=Mod1,clearMods=LevelThree), Redirect(key=<DELE>,clearMods=LevelFive) ] };
+    key.type[Group1] = "NONE_EXTEND";
+    key <SPCE> { [        space,      Shift_L ],
+                 actions[Group1] = [ NoAction(), SetMods(mods=Shift) ] };
     key.type[Group1] = "ONE_LEVEL";
     key <CAPS> { [ ISO_Level5_Shift ],
                  actions[Group1] = [ SetMods(mods=LevelFive) ],

@@ -69,12 +69,12 @@
     { "pos": "Menu", "letters": [ "Alt_R" ] },
     { "pos": "Control_R", "letters": [ "Alt_R" ] },
 
-    { "pos": "Insert", "letters": [ "_" ] },
-    { "pos": "Delete", "letters": [ "_" ] },
-    { "pos": "Home", "letters": [ "_" ] },
-    { "pos": "End", "letters": [ "_" ] },
-    { "pos": "PageUp", "letters": [ "_" ] },
-    { "pos": "PageDown", "letters": [ "_" ] }
+    { "pos": "Insert", "letters": [ "_" ] }
+//    { "pos": "Delete", "letters": [ "_" ] },
+//    { "pos": "Home", "letters": [ "_" ] },
+//    { "pos": "End", "letters": [ "_" ] },
+//    { "pos": "PageUp", "letters": [ "_" ] },
+//    { "pos": "PageDown", "letters": [ "_" ] }
 //    { "pos": "Left", "letters": [ "_" ] },
 //    { "pos": "Right", "letters": [ "_" ] },
 //    { "pos": "Up", "letters": [ "_" ] },

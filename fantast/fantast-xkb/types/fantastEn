@@ -57,6 +57,25 @@ default xkb_types "basic" {
         level_name[Level4] = "Extend";
     };
     
+    type "NONE_SHIFT_EXTEND_ALPHABETIC" {
+        modifiers = LevelFive+Shift+Lock;
+        
+        map[None] = Level1;
+        map[Lock] = Level2;
+        map[Shift] = Level2;
+        map[Shift+Lock] = Level1;
+        map[LevelFive] = Level3;
+        map[LevelFive+Lock] = Level3;
+        map[LevelFive+Shift] = Level3;
+        map[LevelFive+Shift+Lock] = Level3;
+        
+        preserve[LevelFive+Shift] = Shift;
+        
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Shift";
+        level_name[Level3] = "Extend";
+    };
+    
     type "NONE_SHIFT_ALTGR_EXTEND" {
         modifiers = LevelFive+LevelThree+Shift;
         
@@ -118,6 +137,16 @@ default xkb_types "basic" {
         level_name[Level1] = "Base";
         level_name[Level2] = "AltGr";
         level_name[Level3] = "Extend";
+    };
+    
+    type "NONE_EXTEND" {
+        modifiers = LevelFive;
+        
+        map[None] = Level1;
+        map[LevelFive] = Level2;
+        
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Extend";
     };
     
 };
